@@ -22,7 +22,7 @@ Kryten web interface service - provides web dashboard and control panel for CyTu
 
 1. Install dependencies:
 ```bash
-poetry install
+uv sync
 ```
 
 2. Copy the example configuration:
@@ -45,7 +45,7 @@ cp config.example.json config.json
 
 Using Poetry:
 ```bash
-poetry run kryten-webui --config config.json
+uv run kryten-webui --config config.json
 ```
 
 Using the startup script (PowerShell):
@@ -76,19 +76,19 @@ The service currently listens for:
 ### Running Tests
 
 ```bash
-poetry run pytest
+uv run pytest
 ```
 
 ### Linting
 
 ```bash
-poetry run ruff check .
+uv run ruff check .
 ```
 
 ### Formatting
 
 ```bash
-poetry run black .
+uv run black .
 ```
 
 ## License
